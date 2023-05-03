@@ -1,0 +1,15 @@
+pattern type	pattern id	before/after	string	mask position
+qa	1	before	Question: What is the topic of this newsgroup? Answer: <mask>.	-2
+qa	2	before	Question: What is the category of this newsgroup? Answer: <mask>.	-2
+qa	3	before	Question: What is the topic of this newsgroup? Answer: <mask>	-1
+qa	4	before	Question: What is the category of this newsgroup? Answer: <mask>	-1
+prompt	1	before	Category: <mask>.	-2
+prompt	2	before	Class: <mask>.	-2
+prompt	3	before	Topic: <mask>.	-2
+prompt	4	before	Theme: <mask>.	-2
+prompt	5	before	Category: <mask>	-1
+prompt	6	before	Class: <mask>	-1
+prompt	7	before	Topic: <mask>	-1
+prompt	8	before	Theme: <mask>	-1
+prompt	9	after	<mask> Newsgroup:	0
+prompt	10	after	<mask> NEWSGROUP:	0

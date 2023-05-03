@@ -1,0 +1,15 @@
+pattern type	pattern id	before/after	string	mask position
+qa	1	before	Question: What is the sentiment of this text? Answer: <mask>.	-2
+qa	2	before	Question: What is the writer's opinion in this text? Answer: <mask>.	-2
+qa	3	before	Question: What is the sentiment of this text? Answer: <mask>	-1
+qa	4	before	Question: What is the writer's opinion in this text? Answer: <mask>	-1
+prompt	1	before	Opinion: <mask>.	-2
+prompt	2	before	Feeling: <mask>.	-2
+prompt	3	before	Sentiment: <mask>.	-2
+prompt	4	before	Summary: <mask>.	-2
+prompt	5	before	Opinion: <mask>	-1
+prompt	6	before	Feeling: <mask>	-1
+prompt	7	before	Sentiment: <mask>	-1
+prompt	8	before	Summary: <mask>	-1
+prompt	9	after	<mask> Sentiment:	0
+prompt	10	after	<mask> SENTIMENT:	0
