@@ -1,6 +1,6 @@
 # The Benefits of Label-Description Training for Zero-Shot Text Classification
 
-This repository contains the data and code for "The Benefits of Label-Description Training for Zero-Shot Text Classification." In this paper, we propose a simple way to curate small finetuning datasets intended to describe the labels for a task, which further improves zero-shot accuracies with minimal effort. 
+This repository contains the data and code for "[The Benefits of Label-Description Training for Zero-Shot Text Classification](https://arxiv.org/abs/2305.02239)." In this paper, we propose a simple way to curate small finetuning datasets intended to describe the labels for a task, which further improves zero-shot accuracies with minimal effort. 
 
 
 ## Data and Code
@@ -50,4 +50,16 @@ python ./src/zero_shot/domain_transfer.py -debug -dataset agnews -nlabel 4 -mode
 Example for getting domain transfer results (using dev set and epochs):
 ```
 python ./src/domain_transfer/main.py -debug -dataset agnews -nlabel 4 -seed 11 -model_type base -train -train_size 400 -lr 1e-5 -epochs 15 -label_type orig -freeze_half -batch_size 2
+```
+
+## Citation
+```
+@misc{gao2023benefits,
+      title={The Benefits of Label-Description Training for Zero-Shot Text Classification}, 
+      author={Lingyu Gao and Debanjan Ghosh and Kevin Gimpel},
+      year={2023},
+      eprint={2305.02239},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
