@@ -12,7 +12,7 @@ conda env create -f nlp.yml
 
 ### Manual Data and Prompts
 
-Our prompts and manual data are stored in the data directory. The required directory (e.g., data/agnews) must include  'train.tsv', 'dev.tsv', 'test.tsv' and 'manual_24.tsv' to run the code. Both train.tsv and dev.tsv could be empty files if using Label-Description training. The 'prompts.tsv' file, containing templates for each dataset, should be placed in the same directory as the corresponding data.
+Our prompts and manual data are stored in the data directory. The required directory (e.g., data/agnews) must include  'train.tsv', 'dev.tsv', 'test.tsv' and 'manual_24.tsv' to run the code. Both train.tsv and dev.tsv could be empty files if using Label-Description training. The 'manual_24.tsv' is our manually written LabelDesc data. The 'prompts.tsv' file, containing templates for each dataset, should be placed in the same directory as the corresponding data.
 
 For template writing, the 1st column indicates the pattern type, the 2nd column represents the pattern ID within this type, the 3rd column shows the position of the text in relation to the pattern text, and the 4th column identifies the position of mask token and whether we count from left to right or vise versa depends on the position of main text. Note that RoBERTa uses a byte-level BPE as a tokenizer.
 
