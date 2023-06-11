@@ -74,7 +74,7 @@ class BaseModel(object):
 
     def specify_labels(self):
         if self.params.dataset in ['agnews', 'yahoo']:
-            return [' World', ' Sports', ' Business', ' Tech']
+            return ['World', 'Sports', 'Business', 'Tech']
         elif self.params.dataset in ['yahoo10']:
             return [' Society', ' Science', ' Health', ' Education', ' Computer',
              ' Sports', ' Business', ' Entertainment', ' Relationship', ' Politics']
