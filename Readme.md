@@ -54,12 +54,20 @@ python ./src/domain_transfer/main.py -debug -dataset agnews -nlabel 4 -seed 11 -
 
 ## Citation
 ```
-@misc{gao2023benefits,
-      title={The Benefits of Label-Description Training for Zero-Shot Text Classification}, 
-      author={Lingyu Gao and Debanjan Ghosh and Kevin Gimpel},
-      year={2023},
-      eprint={2305.02239},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{gao-etal-2023-benefits,
+    title = "The Benefits of Label-Description Training for Zero-Shot Text Classification",
+    author = "Gao, Lingyu  and
+      Ghosh, Debanjan  and
+      Gimpel, Kevin",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.853",
+    pages = "13823--13844"
 }
 ```
